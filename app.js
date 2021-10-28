@@ -1,6 +1,6 @@
 let express = require('express');
 let app = express();
-const port = process.env.PORT
+const port = process.env.PORT || 8080
 
 
 app.get('/saludo',(req,resp) => {
