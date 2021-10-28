@@ -1,5 +1,6 @@
 let express = require('express');
 let app = express();
+const port = process.env.PORT
 
 
 app.get('/saludo',(req,resp) => {
@@ -8,7 +9,5 @@ return resp.json(saludar)
 });
 
 
-app.listen(8080, function(){
-
-    console.log('escuchando puerto 8080');
+app.listen(port, function(){
 });
